@@ -1,0 +1,59 @@
+.home-block { 
+	padding-top:2rem;
+	padding-bottom:2rem;
+	margin-bottom:2rem;
+	border-bottom:1px solid rgba(0,0,0,.055);
+	&:first-child {
+		padding-top:1rem;
+	}
+	h2.intro { text-align:center; }
+}
+
+.entry-content.home-grid .button {
+	min-width:55%;
+	width:55%;
+	text-align:center;
+}
+
+.home-content .home-intro p {
+	font-size:rem(24);
+	strong,b {
+		color:$zodiac;
+	}
+}
+
+h2.home-title {
+	text-align:center;
+	color:$zodiac;
+	font-size:rem(35);
+}
+
+p.blog-buttons {
+	.button { 
+		display:inline-block; 
+		margin-right:1.5rem;
+	}
+}
+
+.kmw-blog-list {
+	ul,li {
+		margin:0;
+		padding:0;
+	}
+	li { 
+		margin-bottom:1rem;
+	}
+	.dashicons-admin-post { 
+		float:left;
+		margin-right:1rem;
+		font-size:rem(28);
+	}
+	li { list-style-type:none; }
+	.cpt-date {
+		display:block;
+		font-size:rem(9);
+		text-transform:uppercase;
+	}
+}
+
+#portfolio-button { margin-top:3rem; }

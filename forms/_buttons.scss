@@ -1,0 +1,16 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	font-family:"Open Sans", Arial, Helvetica, sans-serif;
+	background-color:$frenchgray;
+	color:$zodiac;
+	border:1px solid $zodiac;
+	&:hover {
+		background-color:$white;
+	}
+
+	&:active,
+	&:focus {
+	}
+}

@@ -1,0 +1,25 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {	
+	font-family:"Open Sans", Arial, Helvetica, sans-serif;
+	border:1px solid $steel;
+	background-color:$white;
+	color:$steel;
+	&:focus {
+		color:$coal;
+		border:1px solid $violet;
+	}
+}
+
+textarea {
+	padding-left: 3px;
+	width: 100%;
+}

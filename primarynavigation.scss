@@ -1,0 +1,48 @@
+.main-navigation {
+	margin-bottom:1rem;
+	a {
+		&:link, &:visited {
+			color:$white;
+			@include text-shadow($zodiac);
+		}
+		&:hover, &:focus, &:active {
+			color:lighten($logan,10%);
+			@include text-shadow(#000);
+		}
+	}
+}
+.main-navigation,.main-navigation li { float:none; }
+.main-navigation li {
+	display:inline-block;
+	font-size: rem(18);
+	
+	ul { box-shadow:none; }
+}
+@media screen and (max-width:1200px) {
+	.main-navigation li {
+		font-size: rem(14);
+	}
+}
+.main-navigation li li { display:block; }
+.main-navigation li a {
+	padding:0 1.5em;
+	&:first-child {
+		padding-left:2rem;
+	}
+}
+.main-navigation li li a {
+	padding:0 1em;
+}
+
+#site-navigation.main-navigation.stuck {
+	padding:.5rem 0;
+	a {
+		&:link, &:visited {
+			color:$zodiac;
+			@include text-shadow(shade($white,5%));
+		}
+		&:hover, &:focus, &:active {
+			color:$violet;
+		}
+	}
+}

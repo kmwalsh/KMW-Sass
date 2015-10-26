@@ -1,0 +1,193 @@
+@import "fontawesome.min.css";
+
+/* ========================================
+SOCIAL ICONS
+======================================== */
+.soc {
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:"FontAwesome" !important;
+    font-style:normal;
+	text-decoration:none;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 20px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 1px;
+    margin-right: 4px;
+    color: #fff !important;
+	text-shadow:1px 1px 0 rgba(0,0,0,.25);
+    background-color: none;
+	
+	@include transition(225ms linear all);
+	
+	&:hover,&:focus,&:active {
+		text-shadow:2px 2px 0 rgba(0,0,0,.45);
+		i {
+			margin-bottom:1px;
+			background-color:rgba(0,0,0,.55);
+		}
+	}
+}
+.soc li i {
+	display:block;
+	@include transition(225ms linear all);
+    line-height: 32px;
+}
+
+footer {
+	.soc li a {
+		font-size:16px;
+		width: 25px;
+		height: 25px;
+		line-height: 25px;
+		i { line-height: 25px; }
+	}
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-twitter {
+    background-color: #4da7de;
+}
+.soc-reddit {
+    background-color: #e74a1e;
+}
+.soc-github {
+    background-color: #5380c0;
+}
+.soc-codepen {
+    background-color: #595959;
+}
+.soc-instagram {
+    background-color: #9c7c6e;
+}
+.soc-email1 {
+    background-color: #578AD6;
+}
+.soc-soundcloud {
+    background-color: #fe3801;
+}
+.soc-facebook {
+    background-color: #3e5b98;
+}
+.soc-google {
+    background-color: #d93e2d;
+}
+.soc-pinterest {
+    background-color: #c92619;
+}
+.soc-linkedin {
+    background-color: #3371b7;
+}
+.soc-youtube {
+    background-color: #e02a20;
+}
+.soc-rss {
+    background-color: #f26109;
+}
+
+/* ========================================
+DASHICONS
+======================================== */
+.dashy,
+.button.fav.bp-secondary-action,
+.button.item-button.bp-secondary-action.delete-activity.confirm,
+.button.bp-secondary-action.unfav,
+.tags-links a,
+.comments-link a,
+.bbp-topic-tags a,
+.cat-links a,
+.favorite-toggle,
+.subscription-toggle,
+.dashicons-admin-post,
+.dashicons-businessman,
+.dashicons-list-view,
+.dashicons-search,
+.dashicons-star-filled,
+.dashicons-admin-comments,
+.dashicons-admin-post,
+.dashicons-sort,
+.acomment-reply,
+.dashicons-arrow-right
+{
+	line-height:1;
+	&:before {
+		font-family: "dashicons";
+		margin-right:.5rem;
+		display:inline-block;
+		position:relative;
+		top:3px;
+	}
+}
+
+.tags-links a:before,
+.bbp-topic-tags a:before 
+{ content: '\f323'; }
+
+.button.fav.bp-secondary-action:before,
+.favorite-toggle:before 
+{ content:'\f155'; }
+
+.cat-links a:before
+{ content:'\f318'; }
+
+.comments-link a:before,
+.acomment-reply:before { content:'\f125'; }
+
+.subscription-toggle:before { content:'\f466'; }
+
+.dashicons-admin-comments:before { content:'\f101'; }
+
+.button.bp-secondary-action.unfav:before,
+.button.item-button.bp-secondary-action.delete-activity.confirm:before {
+	content: '\f153';
+}
+
+.bbp-topics-front ul.super-sticky,
+.bbp-topics ul.super-sticky,
+.bbp-topics ul.sticky,
+.bbp-forum-content ul.sticky {
+	li.bbp-topic-title a.bbp-topic-permalink {
+		&:before {		
+			@extend .dashy;
+			content:'\f109';
+		}
+	}
+}
+
+ul.status-closed {
+	a.bbp-topic-permalink {
+		&:before {		
+			@extend .dashy;
+			content:'\f153';
+		}
+	}
+}

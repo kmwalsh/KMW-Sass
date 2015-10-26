@@ -1,0 +1,88 @@
+.button,a.button {
+	@include transition(250ms linear all);
+	background-color:$violet;
+	color:$white;
+	text-decoration:none;
+	padding:.5rem;
+	margin:0;
+	display:table;
+	&:hover,&:active,&:focus {
+		background-color:$zodiac;
+	}
+	span {
+		display:block;
+		font-size:65%;
+		margin-top:2%;
+	}
+}
+
+.resume-buttons a.button {
+	font-size:rem(18);
+}
+
+/*========= button variations ======= */
+.button.large-button {
+	font-size:rem(18);
+	padding:1rem 2rem;
+	margin:1rem;
+}
+.button.large-button.center-button { margin:1rem auto; }
+.button.center-button { margin:.5rem auto; }
+
+.button.pale-button {
+	background-color:$frenchgray;
+	color:$zodiac;
+	&:hover,&:active,&:focus {
+		background-color:darken($frenchgray,10%);
+	}
+}
+.button.small-button {
+	font-size:rem(11);
+	text-transform:uppercase;
+	padding:.5rem;
+	margin:.5rem 0;
+}
+/*========= dropdown-style button ======= */
+.dropdown-button {
+	position:relative;
+}
+
+.dropdown-button ul {
+	opacity:0;
+		-ms-transform:translateX(-750px);
+		-webkit-transform:translateX(-750px);
+		-moz-transform:translateX(-750px);
+	transform:translateX(-750px);
+	
+	@include transition(200ms linear all);
+	
+	position:absolute;
+	top:2.5rem;
+	left:0;
+	background-color:$kimberly;
+	margin:0; padding:0;
+	li { 
+		list-style-type:none; 
+		font-size:rem(14);
+		margin:0; 
+		width:200px;
+		a {
+			display:block;
+			padding:5px;
+			color:#fff;
+			text-decoration:none;
+			&:hover,&:focus {
+				background-color:$violet;
+			}
+		}
+	}
+}
+.dropdown-button:hover ul,
+.dropdown-button:hover ul 
+{
+	opacity:1;
+		-ms-transform:translateY(0);
+		-webkit-transform:translateY(0);
+		-moz-transform:translateY(0);
+	transform:translateY(0);
+}

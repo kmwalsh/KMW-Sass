@@ -1,0 +1,49 @@
+h1,h2,h3,h4,h5,h6 {
+	font-family:"Bitter", Georgia, serif;
+	font-weight:normal;
+}
+
+.entry-content {
+	h1 { 
+		font-size: rem(28); 
+		color:$zodiac;
+	}
+	h2 { 
+		font-size: rem(26); 
+		color:$steel;
+	}
+	h3 { 
+		font-size: rem(24); 
+		color:$violet;
+	}
+	h4 { 
+		font-size: rem(22); 
+		color:$kimberly;
+	}
+	h5 { 
+		font-size: rem(20);
+	}
+	h6 { 
+		font-size: rem(18); 
+	}
+}
+
+h1.site-title {
+	margin:0; padding:0;
+	padding-left:2rem;
+	@include text-shadow($zodiac);
+	opacity:.8;
+}
+h1.site-title {
+	text-transform:lowercase;
+	a {
+		text-decoration:none;
+		color:$logan;		
+	}
+}
+
+@media screen and (min-width:1200px) {
+	h1.site-title {
+		font-size:rem(60);
+	}
+}

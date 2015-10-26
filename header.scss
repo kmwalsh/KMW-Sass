@@ -1,0 +1,16 @@
+@media screen and (max-width:600px) {
+	.site-header {
+		.social-icons { 
+			text-align:center; 
+		}
+	}
+}
+@media screen and (min-width:600px) and (max-width:1200px) {
+	.site-header {
+		.social-icons { 
+			text-align:left; 
+			padding-top:1rem;
+			padding-left:2rem;
+		}
+	}
+}

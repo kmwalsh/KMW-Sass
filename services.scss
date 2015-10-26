@@ -1,0 +1,124 @@
+.single-web-services {
+	.nav-links span {
+		font-size:rem(11);
+		text-transform:uppercase;
+		margin-right:1rem;
+	}
+	.fancy-button {
+		.button {
+			margin:2rem 0 3rem 0;
+			text-align:center;
+			font-size:rem(26);
+		}
+	}
+	.sidebar {
+		.fancy-button {
+			border-bottom:1px solid $logan;
+			.button {
+				display:block;
+				min-width:100%;
+				width:100%;
+			}
+		}
+	}
+	.footer .fancy-button { 
+		margin-top:5rem;
+	}
+	a#portfolio-button {
+		font-size:rem(11);
+		padding:.5rem;
+		text-transform:uppercase;
+	}
+	h2.work-examples {
+		font-size:rem(16);
+		text-align:center;
+		margin-top:3rem;
+		margin-bottom:2rem;
+	}
+	.portfolio-grid h2.cpt-title {
+		color:$zodiac;
+		background-image:none;
+		background-color:rgba(255,255,255,.65);
+	}
+}
+
+.faq-buttons .button { display:inline-block; }
+
+.kmw-service-list {	
+	ul,li { 
+		margin:0;
+		padding:0;
+		list-style-type:none;
+		font-size:0;
+	}
+	.grid-item { 
+		font-size:rem(16);
+		display:inline-block;
+		float:none;
+		vertical-align:top;
+		width:48%;
+		margin-right:2% !important;
+	}
+	.grid-item.last { 
+		margin-right:0 !important;
+	}
+	.cpt-content {
+		height:300px;
+		min-height:300px;
+		border:1px solid $zodiac;
+		margin-bottom:2rem;
+		overflow:hidden;
+	}
+	.cpt-content-body p {
+		padding:.75rem;
+	}
+	a.cpt-button-link {
+		margin:1rem;
+		font-size:rem(11);
+		text-transform:uppercase;
+		opacity:0;
+		@include transition(250ms linear all);
+		@include transform(translateX(-350px));
+	}
+	.cpt-content:hover,.cpt-content:focus {
+		a.cpt-button-link {
+			@include transform(translateX(0));
+			opacity:1;
+		}	
+		h3.cpt-title {
+			background-color:$violet;
+			text-shadow:1px 1px 0 darken($violet,5%);
+		}
+	}
+	a.cpt-link {
+		color:#fff;
+		text-decoration:none;
+		@include transition(300ms linear all);
+		h3 {
+			color:#fff;
+			@include transition(300ms linear all);
+		}
+		&:hover,&:focus,&:active {
+			h3.cpt-title {
+				background-color:$zodiac;
+				text-shadow:1px 1px 0 darken($zodiac,10%);
+			}
+		}
+	}
+	h3.cpt-title {
+		margin:0;
+		padding:.5rem;
+		background-color:$kimberly;
+		text-shadow:1px 1px 0 darken($kimberly,8%);
+		font-size:rem(16);
+		position:relative;
+		padding-left:2.5rem;
+		.dashicons-arrow-right:before { 
+			position:absolute;
+			left:0;
+			top:0;
+			font-size:rem(35);
+			margin-top:3px;
+		}
+	}
+}

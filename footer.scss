@@ -1,0 +1,66 @@
+.site-footer {
+	.inner-wrap {
+		padding:3rem 2rem;
+		border-top:10px solid $logan;
+		background-image:url(images/footer.png);
+		background-color:$steel;
+		color:$frenchgray;
+	}
+}
+@media screen and (min-width:1200px) {
+.footer-widgets {
+	.grid-item {
+		float:none;
+		display:table-cell;
+		border-right:1px solid $logan;		
+		.footer-widget {
+			padding-left:1.5rem;
+		}		
+		&:first-child .footer-widget {
+			padding-left:0;
+		}
+	}
+}
+}
+.footer-widgets {
+	.grid-item {
+		vertical-align:top;
+		&:last-child { border:0; }
+	}
+	@include clearfix();
+	ul {
+		margin:0; padding:0;
+		li {
+			font-size:rem(14);
+			list-style-type:none;
+			margin:0; padding:0;
+			padding-bottom:.25rem;
+			margin-bottom:.5rem;
+		}
+	}
+	a {
+		text-decoration:none;
+		&:link, &:visited {			
+			color:$frenchgray;
+		}
+		&:hover, &:focus, &:active {
+			text-decoration:underline;
+			color:$logan;
+		}
+	}
+	
+	h2 {
+		margin:0; padding:0; 
+		padding:1rem 0;
+		color:$white;
+		@include text-shadow(shade($steel,20%));
+	}
+}
+
+.site-info {
+	margin-top:2rem;
+	font-size:rem(14);
+	color:$logan;
+	a:visited,a:link { color:$logan; }
+	a:hover,a:active,a:focus { color:$white; }
+}
